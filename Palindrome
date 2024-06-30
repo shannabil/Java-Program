@@ -1,0 +1,23 @@
+package assessment;
+
+public class Palindrome {
+
+	public static void main(String[] args) {
+		int num = 215;
+		int original = num;
+		int sum =0;
+		while(num>0) {
+			int reminder = num%10;
+			sum = sum*10+reminder;
+			num=num/10;
+		}
+		if (sum== original) {
+			System.out.println("GIven Number is Palindrom");
+			
+		}
+		else {
+			System.out.println("Given Number Is NOt Prime Number");
+		}
+	}
+
+}
