@@ -1,0 +1,24 @@
+package assessment;
+
+public class ReverseEvenWords {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String words = "My name is Nabil sha";//0,   1     2,   3    ,   4
+		String[] split = words.split(" ");//["My","name","is","Nabil","sha"]
+		for (int i = 0; i < split.length; i++) {
+			if (i%2==0) {
+				System.out.print(split[i]+" ");				 
+			}
+			else {
+				for (int j = split[i].length()-1; j >=0; j--) {//split[1]=name = 4-1 j =3; j >= 0;j--
+					System.out.print(split[i].charAt(j));
+				}
+				System.out.print(" ");
+			}
+		}
+		
+
+	}
+
+}
