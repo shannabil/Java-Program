@@ -1,0 +1,18 @@
+package assessment;
+
+public class CharAcc {
+
+	public static void main(String[] args) {
+		String name = "jfwuojeriirirowerrrrr";
+		char n = 'r';
+		char[] charArray = name.toCharArray();//j,f,w,u,o
+		int count = 0;
+for (int i = 0; i < charArray.length; i++) {
+	if (charArray[i]== n) {
+		count++;
+	}
+}
+System.out.println(count);
+	}
+
+}
