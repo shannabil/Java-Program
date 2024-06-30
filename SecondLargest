@@ -1,0 +1,19 @@
+package assessment;
+
+import java.util.Arrays;
+
+public class SecondLargest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int arr[] = {1,55,32,2,9,0,87,77,5,44,3};
+		int length = arr.length;
+		//System.out.println(length);
+		Arrays.sort(arr);	
+		
+		System.out.println(arr[length-2]);
+		
+
+	}
+
+}
